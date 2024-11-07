@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0b0b8e22c1f6d4e965d782105c8618, type: 3}
+  m_Name: Enemy
+  m_EditorClassIdentifier: 
+  m_MaxHP: 10
+  m_Power: 99
+  m_Guard: 9
+  m_enemyAvatar: {fileID: 9000000, guid: 50c8fe73844fb0a42bdb72b9873224e6, type: 3}
+  m_enemyIdleMotion: {fileID: 7400000, guid: 19b555b930185384981ace17d0fef203, type: 2}
+  m_enemyHitMotion: {fileID: -203655887218126122, guid: c42fcdf3d07a4c743b3fdec8bfc10b3e, type: 3}
+  m_enemyDownMotion: {fileID: 0}
+  m_transitionConditionList:
+  - stateName: HighKick
+    enemyMotion: {fileID: 2061026298564689150, guid: 5931e593c5fda164c87ee5b52d4227b0, type: 2}
+    transitionConditionList:
+      m_HPConditions:
+        m_transitionHP: 77
+      m_transitionConditionsList: []
+      m_explanatoryIndex: 0
+      m_explanatoryNoteList:
+      - "\u30EA\u30B9\u30C8\u304B\u3089\u6761\u4EF6\u3092\u6307\u5B9A:"
+      - "\u9077\u79FB\u6761\u4EF6\uFF1AHP"
+    isFold: 0
+    selectPunch: -1
+    hitTerms_1:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_2:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_3:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_4:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_5:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_6:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    blockID: 2
+    damage: 3
+    start: 0.6
+    end: 0.8
+    math: 13
+  - stateName: Slap
+    enemyMotion: {fileID: -5291948671589563170, guid: 317f565bcbf51d642a5d7c1c691507d0, type: 2}
+    transitionConditionList:
+      m_HPConditions:
+        m_transitionHP: 0
+      m_transitionConditionsList: []
+      m_explanatoryIndex: 0
+      m_explanatoryNoteList:
+      - "\u30EA\u30B9\u30C8\u304B\u3089\u6761\u4EF6\u3092\u6307\u5B9A:"
+      - "\u9077\u79FB\u6761\u4EF6\uFF1AHP"
+    isFold: 1
+    selectPunch: -1
+    hitTerms_1:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_2:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_3:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_4:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_5:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_6:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    blockID: 2
+    damage: 0
+    start: 0.6666665
+    end: 0.8
+    math: 13
+  - stateName: Mma_Kick
+    enemyMotion: {fileID: -203655887218126122, guid: 32c8823a0da245e408b76d7036e85723, type: 3}
+    transitionConditionList:
+      m_HPConditions:
+        m_transitionHP: 0
+      m_transitionConditionsList: []
+      m_explanatoryIndex: 0
+      m_explanatoryNoteList:
+      - "\u30EA\u30B9\u30C8\u304B\u3089\u6761\u4EF6\u3092\u6307\u5B9A:"
+      - "\u9077\u79FB\u6761\u4EF6\uFF1AHP"
+    isFold: 1
+    selectPunch: -1
+    hitTerms_1:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_2:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_3:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_4:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_5:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_6:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    blockID: 2
+    damage: 1
+    start: 1
+    end: 1.2
+    math: 13
+  - stateName: Back Kick
+    enemyMotion: {fileID: -203655887218126122, guid: d2c20bcec449347499ce57fa1b977663, type: 3}
+    transitionConditionList:
+      m_HPConditions:
+        m_transitionHP: 0
+      m_transitionConditionsList: []
+      m_explanatoryIndex: 0
+      m_explanatoryNoteList:
+      - "\u30EA\u30B9\u30C8\u304B\u3089\u6761\u4EF6\u3092\u6307\u5B9A:"
+      - "\u9077\u79FB\u6761\u4EF6\uFF1AHP"
+    isFold: 1
+    selectPunch: -1
+    hitTerms_1:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_2:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_3:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_4:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_5:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    hitTerms_6:
+      isActive: 0
+      battleID: 0
+      start: 0
+      end: 999
+    blockID: 1
+    damage: 0
+    start: 0.75
+    end: 0.9
+    math: 13

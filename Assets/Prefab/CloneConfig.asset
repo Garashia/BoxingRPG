@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b8e7d9ba7acc549ac3324882037d55, type: 3}
+  m_Name: CloneConfig
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 118968, guid: 34d7c0326aa4144e0a3b7a904ee287bc, type: 3}
+  cloneCount: 100
+  isParent: 1
+  positionOffset:
+    x: floor(# % sqrt(C)) * 46
+    y: 0
+    z: floor(# / sqrt(C)) * 46
+  rotationOffset:
+    x: 0
+    y: 0
+    z: 0
+  scaleOffset:
+    x: 1
+    y: 1
+    z: 1

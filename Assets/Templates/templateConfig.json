@@ -1,0 +1,227 @@
+{
+  "templates": [
+    {
+      "name": "螺旋配置",
+      "positionOffset": {
+        "X": "cos(# * 0.5) * (#) * 0.5",
+        "Y": "# * 0.2",
+        "Z": "sin(# * 0.5) * (#) * 0.5"
+      },
+      "rotationOffset": {
+        "X": "0",
+        "Y": "cos(# * PI / C)",
+        "Z": "0"
+      }
+    },
+    {
+      "name": "波状配置",
+      "positionOffset": {
+        "X": "# * 1.5",
+        "Y": "sin(# * 0.5) * 2",
+        "Z": "cos(# * 0.3) * 3"
+      },
+      "rotationOffset": {
+        "X": "sin(# * 0.2) * 15",
+        "Y": "cos(# * 0.3) * 15",
+        "Z": "0"
+      }
+    },
+    {
+      "name": "ランダム放射状配置",
+      "positionOffset": {
+        "X": "cos(# * PI * 2 / C) * R(1, 5)",
+        "Y": "R(-2, 2)",
+        "Z": "sin(# * PI * 2 / C) * R(1, 5)"
+      },
+      "rotationOffset": {
+        "X": "R(-30, 30)",
+        "Y": "R(0, 360)",
+        "Z": "R(-30, 30)"
+      }
+    },
+    {
+      "name": "ジグザグ配置",
+      "positionOffset": {
+        "X": "(# % 2 == 0 ? 1 : -1) * 3",
+        "Y": "# * 0.5",
+        "Z": "(# % 2 == 0 ? -1 : 1) * 3"
+      },
+      "rotationOffset": {
+        "X": "0",
+        "Y": "sin(# * PI / C) * 30",
+        "Z": "cos(# * PI / C) * 15"
+      }
+    },
+    {
+      "name": "球面配置",
+      "positionOffset": {
+        "X": "sin(# * PI * 2 / C) * cos(# * PI / C) * 5",
+        "Y": "cos(# * PI * 2 / C) * 5",
+        "Z": "sin(# * PI * 2 / C) * sin(# * PI / C) * 5"
+      },
+      "rotationOffset": {
+        "X": "sin(# * PI / C) * 15",
+        "Y": "cos(# * PI * 2 / C) * 10",
+        "Z": "sin(# * PI * 2 / C) * 15"
+      }
+    },
+    {
+      "name": "ランダム散布配置",
+      "positionOffset": {
+        "X": "R(-10, 10)",
+        "Y": "R(-10, 10)",
+        "Z": "R(-10, 10)"
+      },
+      "rotationOffset": {
+        "X": "R(-180, 180)",
+        "Y": "R(-180, 180)",
+        "Z": "R(-180, 180)"
+      }
+    },
+    {
+      "name": "螺旋カスケード配置",
+      "positionOffset": {
+        "X": "cos(# * 0.3) * # * 0.5",
+        "Y": "# * 0.3",
+        "Z": "sin(# * 0.3) * # * 0.5"
+      },
+      "rotationOffset": {
+        "X": "# * 5",
+        "Y": "# * 10",
+        "Z": "0"
+      }
+    },
+    {
+      "name": "2Dグリッド配置",
+      "positionOffset": {
+        "X": "floor(# % sqrt(C)) * 1.5",
+        "Y": "0",
+        "Z": "floor(# / sqrt(C)) * 1.5"
+      },
+      "rotationOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      }
+    },
+    {
+      "name": "放射状配置",
+      "positionOffset": {
+        "X": "cos(# * PI * 2 / C) * # * 0.5",
+        "Y": "0",
+        "Z": "sin(# * PI * 2 / C) * # * 0.5"
+      },
+      "rotationOffset": {
+        "X": "0",
+        "Y": "# * (360 / C)",
+        "Z": "0"
+      }
+    },
+    {
+      "name": "6タイル頂点配置",
+      "positionOffset": {
+        "X": "(cos(# * PI / 3) * sqrt(3) * (# / 6))",
+        "Y": "0",
+        "Z": "(sin(# * PI / 3) * sqrt(3) * (# / 6))"
+      },
+      "rotationOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      }
+    },
+    {
+      "name": "円筒配置",
+      "positionOffset": {
+        "X": "cos(# * 0.5) * 5",
+        "Y": "floor((# * 0.5) / (2 * PI))",
+        "Z": "sin(# * 0.5) * 5"
+      },
+      "rotationOffset": {
+        "X": "0",
+        "Y": "# * (360 / C)",
+        "Z": "0"
+      }
+    },
+    {
+      "name": "二十円配置",
+      "positionOffset": {
+        "X": "cos(floor(# / 2) * 2 * PI / (C * 0.5)) * (# % 2 == 0 ? 5 : 8)",
+        "Y": "0",
+        "Z": "sin(floor(# / 2) * 2 * PI / (C * 0.5)) * (# % 2 == 0 ? 5 : 8)"
+      },
+      "rotationOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      }
+    },
+    {
+      "name": "立体Z階数配置",
+      "positionOffset": {
+        "X": "floor((# >> 1 & 1) * 2 + (# & 1)) * 2",
+        "Y": "floor((# >> 2 & 1) * 2 + (# >> 3 & 1)) * 2",
+        "Z": "floor((# >> 4 & 1) * 2 + (# >> 5 & 1)) * 2"
+      },
+      "rotationOffset": {
+        "X": "0",
+        "Y": "# * (360 / C)",
+        "Z": "0"
+      }
+    },
+    {
+      "name": "シフトカスケード配置",
+      "positionOffset": {
+        "X": "(# << 1) & 3",
+        "Y": "((# >> 2) & 1) * 1.5",
+        "Z": "(# >> 3) * 0.5"
+      },
+      "rotationOffset": {
+        "X": "(# << 1) & 45",
+        "Y": "(# >> 1) * 15",
+        "Z": "0"
+      }
+    },
+    {
+      "name": "ビット交差グリッド配置",
+      "positionOffset": {
+        "X": "(# & 3) * 1.5",
+        "Y": "0",
+        "Z": "(# | 3) * 1.2"
+      },
+      "rotationOffset": {
+        "X": "0",
+        "Y": "(# & 7) * 30",
+        "Z": "0"
+      }
+    },
+    {
+      "name": "ランダムビット跳ね配置",
+      "positionOffset": {
+        "X": "(# & 3) * R(-2, 2)",
+        "Y": "0",
+        "Z": "(# >> 2) * R(-2, 2)"
+      },
+      "rotationOffset": {
+        "X": "0",
+        "Y": "(# & 15) * 24",
+        "Z": "0"
+      }
+    },
+    {
+      "name": "逆数配置",
+      "positionOffset": {
+        "X": "#",
+        "Y": "0",
+        "Z": "C/#"
+      },
+      "rotationOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      }
+    }
+
+
+  ]
+}
